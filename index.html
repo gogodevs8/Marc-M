@@ -180,8 +180,8 @@
             <div class="row">
                 <div class="col-lg-4 col-md-6 col-sm-6">
                     <!--  Single Grid product Start -->
-                    <div class="single-grid-product mb-40">
-                        <div class="product-image">
+                    <div class="single-grid-product mb-40 zoom-effect-container">
+                        <div class="product-image image-card">
                             <a href="office.html">
                                 <img src="https://firebasestorage.googleapis.com/v0/b/mybot-wgjqia.appspot.com/o/%2C%20Executive%20Table-600x600.jpg?alt=media&token=1aaa69d9-87e4-46bb-90be-a98f722098b2" class="img-fluid" alt="">
                             </a>
@@ -194,11 +194,10 @@
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6">
                     <!--  Single Grid product Start -->
-                    <div class="single-grid-product mb-40">
-                        <div class="product-image">
+                    <div class="single-grid-product mb-40 zoom-effect-container">
+                        <div class="product-image image-card">
                             <a href="institution.html">
                                 <img src="./assets//images/in.png" class="img-fluid" alt=""
-                                    style="height:370px; width:100%"
                                 >
                             </a>
                         </div>
@@ -210,13 +209,11 @@
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6">
                     <!--  Single Grid product Start -->
-                    <div class="single-grid-product mb-40">
-                        <div class="product-image">
+                    <div class="single-grid-product mb-40 zoom-effect-container">
+                        <div class="product-image image-card">
                             <a href="laboratory.html">
                                 <img src="./assets//images//lab.png" class="img-fluid" alt=""
-                                
-                                style="height:370px; width:100%"
-                                >
+                               >
                             </a>
                         </div>
                         <div class="product-content">
@@ -227,8 +224,8 @@
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6">
                     <!--  Single Grid product Start -->
-                    <div class="single-grid-product mb-40">
-                        <div class="product-image">
+                    <div class="single-grid-product mb-40 zoom-effect-container">
+                        <div class="product-image image-card">
                             <a href="hospital.html">
                                 <img src="https://firebasestorage.googleapis.com/v0/b/mybot-wgjqia.appspot.com/o/Orthopedic%20Attachment%20for%20C-arm%20Compatible%20Table%20(Complete%20Stainless%20steel).png?alt=media&token=72659abf-7a5e-4250-bd41-2efb394fa18c" class="img-fluid" alt="">
                             </a>
@@ -241,8 +238,8 @@
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6">
                     <!--  Single Grid product Start -->
-                    <div class="single-grid-product mb-40">
-                        <div class="product-image">
+                    <div class="single-grid-product mb-40 zoom-effect-container">
+                        <div class="product-image image-card">
                             <a href="home.html">
                                 <img src="./assets/images/home.png" class="img-fluid" alt="">
                             </a>
@@ -255,8 +252,8 @@
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6">
                     <!--  Single Grid product Start -->
-                    <div class="single-grid-product mb-40">
-                        <div class="product-image">
+                    <div class="single-grid-product mb-40 zoom-effect-container">
+                        <div class="product-image image-card">
                             <a href="seating.html">
                                 <img src="./assets/images/seat.png" class="img-fluid" alt="">
                             </a>
@@ -429,7 +426,7 @@
         </footer>
         <!--Footer section end-->
     </div>
-
+    <a href="https://wa.me/919394007786"><img src="assets/images/whatsapp.png" id="fixedbutton"></a>
     <!-- Placed js at the end of the document so the pages load faster -->
 
     <!-- All jquery file included here -->
@@ -443,3 +440,40 @@
 </body>
 
 </html>
+
+<style>
+    #fixedbutton {
+      position: fixed;
+      bottom: 0px;
+      right: 15px; 
+      width:50px;
+      height: 50px;
+      margin:10px;
+      margin-bottom: 100px;
+}
+
+
+.zoom-effect-container {
+    float: left;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.image-card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+}
+
+.image-card img {
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+.zoom-effect-container:hover .image-card img {
+  -webkit-transform: scale(1.08);
+  transform: scale(1.08);
+}
+</style>
