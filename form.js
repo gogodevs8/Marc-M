@@ -23,6 +23,7 @@ form.addEventListener('click', function (e) {
     
     db.collection('ContactForm').doc().set(obj).then(() => {
          console.log("Uploaded to firestore") 
+         alert("Submitted Successfully")
     })
     .catch((e) => {
         console.log(e);
